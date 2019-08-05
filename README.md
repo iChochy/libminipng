@@ -1,0 +1,2 @@
+# libminipng
+通过lodepng解析png图片，使用pngquant算法进行压缩的swift库 libminipng
