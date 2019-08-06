@@ -8,9 +8,9 @@ lodepng:https://github.com/lvandeve/lodepng
 
 ### 快速使用
 
-1、生成`libminipng.framework`
+1、编译生成`libminipng.framework`
 
-2、引入`libminipng.framework`
+2、项目引入`libminipng.framework`
 
 3、编写代码：
 ```
