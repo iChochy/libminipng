@@ -1,11 +1,17 @@
 # libminipng
-通过lodepng解析png图片，使用pngquant算法进行压缩的swift库 libminipng
+通过lodepng解析png图片，使用pngquant算法进行压缩的swift-framework
 
-### 使用方法
+pngquant:https://github.com/ImageOptim/libimagequant
 
-1、生成`libminipng.framework`  
-2、引入`libminipng.framework`  
-3、编写代码：  
+lodepng:https://github.com/lvandeve/lodepng
+
+### 快速使用
+
+1、编译生成`libminipng.framework`
+
+2、项目引入`libminipng.framework`
+
+3、编写代码：
 ```swift
         import libminipng
         let path:String = "/Users/mleo/Downloads/Cloud.png"
