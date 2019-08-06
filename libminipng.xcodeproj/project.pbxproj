@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4CC58D22F977A20016ABE1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A4CC58C22F977A20016ABE1 /* README.md */; };
 		7AFCFB0F22F4319200FAD58A /* kmeans.c in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCFAFD22F4319100FAD58A /* kmeans.c */; };
 		7AFCFB1022F4319200FAD58A /* mempool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAFE22F4319100FAD58A /* mempool.h */; };
 		7AFCFB1122F4319200FAD58A /* kmeans.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAFF22F4319100FAD58A /* kmeans.h */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A4CC58C22F977A20016ABE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7AFCFAE222F4316A00FAD58A /* libminipng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libminipng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFCFAE522F4316A00FAD58A /* libminipng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libminipng.h; sourceTree = "<group>"; };
 		7AFCFAE622F4316A00FAD58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		7AFCFAD822F4316A00FAD58A = {
 			isa = PBXGroup;
 			children = (
+				7A4CC58C22F977A20016ABE1 /* README.md */,
 				7AFCFAE422F4316A00FAD58A /* libminipng */,
 				7AFCFAE322F4316A00FAD58A /* Products */,
 			);
@@ -205,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4CC58D22F977A20016ABE1 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
