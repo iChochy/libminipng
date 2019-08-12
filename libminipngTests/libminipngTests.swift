@@ -22,12 +22,14 @@ class libminipngTests: XCTestCase {
     func testExample() {
         let path:String = "http://images.chochy.cn/Cloud.png"
         let data:Data = try! Data.init(contentsOf: URL.init(string: path)!)
-        let result = minipng.data2Data(data,100)
+        let maximum:Int = 100 // 压缩率，0-100,100为最好
+        let result:Data? = minipng.data2Data(data,maximum)
         try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
 
         
 //        let path:String = "/Users/mleo/Cloud.png"
-//        let result = minipng.path2Data(path, 100)
+//        let maximum:Int = 100 // 压缩率，0-100,100为最好
+//        let result:Data? = minipng.path2Data(path, maximum)
 //        try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
         
         // This is an example of a functional test case.

@@ -10,6 +10,13 @@ import Cocoa
 
 public class minipng{
     
+    
+    /// 通过PNG图片Data压缩
+    ///
+    /// - Parameters:
+    ///   - data: PNG图片Data
+    ///   - maximum: 压缩率，0-100,100为最好
+    /// - Returns: 压缩后的PNG图片Data
     public static func data2Data(_ data:Data,_ maximum:Int) -> Data?{
         var mini:UnsafeMutablePointer<UInt8>? = UnsafeMutablePointer.allocate(capacity: 0)
         let pngData:UnsafeMutablePointer<UInt8> = UnsafeMutablePointer.allocate(capacity: data.count)
@@ -24,6 +31,13 @@ public class minipng{
         return result;
     }
     
+    
+    /// 通过PNG图片路径压缩
+    ///
+    /// - Parameters:
+    ///   - path: PNG图片路径
+    ///   - maximum: 压缩率，0-100,100为最好
+    /// - Returns: 压缩后的PNG图片Data
     public static func path2Data(_ path:String,_ maximum:Int) -> Data?{
         var mini:UnsafeMutablePointer<UInt8>? = UnsafeMutablePointer.allocate(capacity: 0)
         let pngPath = UnsafeMutablePointer<Int8>(mutating: (path as NSString).utf8String)
