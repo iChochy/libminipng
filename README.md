@@ -1,10 +1,6 @@
 # libminipng
 通过lodepng解析png图片，使用pngquant算法进行压缩的swift-framework
 
-pngquant:https://github.com/ImageOptim/libimagequant
-
-lodepng:https://github.com/lvandeve/lodepng
-
 
 ### 方法说明：
 
@@ -53,3 +49,10 @@ try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
 ```
   
   
+
+###GitHub:
+https://github.com/iChochy/libminipng
+
+
+pngquant: https://github.com/ImageOptim/libimagequant
+lodepng: https://github.com/lvandeve/lodepng
