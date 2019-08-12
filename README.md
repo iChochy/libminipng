@@ -50,9 +50,9 @@ try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
   
   
 
-###GitHub:
+###GitHub:  
 https://github.com/iChochy/libminipng
 
 
-pngquant: https://github.com/ImageOptim/libimagequant
+pngquant: https://github.com/ImageOptim/libimagequant  
 lodepng: https://github.com/lvandeve/lodepng
