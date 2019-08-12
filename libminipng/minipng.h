@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 
-unsigned long _data(char *path,unsigned char **data);
+unsigned long _data2Data(unsigned char **data,int maximum,unsigned char* png_data,size_t png_size);
+
+unsigned long _path2Data(unsigned char **data,int maximum,char *png_path);
 
 #endif /* minipng_h */

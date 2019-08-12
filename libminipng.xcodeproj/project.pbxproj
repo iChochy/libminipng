@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7A4CC58D22F977A20016ABE1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A4CC58C22F977A20016ABE1 /* README.md */; };
+		7A56E98E22FD613100E53422 /* libminipngTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56E98D22FD613100E53422 /* libminipngTests.swift */; };
+		7A56E99022FD613100E53422 /* libminipng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFCFAE222F4316A00FAD58A /* libminipng.framework */; };
 		7AFCFB0F22F4319200FAD58A /* kmeans.c in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCFAFD22F4319100FAD58A /* kmeans.c */; };
 		7AFCFB1022F4319200FAD58A /* mempool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAFE22F4319100FAD58A /* mempool.h */; };
 		7AFCFB1122F4319200FAD58A /* kmeans.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAFF22F4319100FAD58A /* kmeans.h */; };
@@ -30,8 +32,21 @@
 		7AFCFB2822F4350A00FAD58A /* libminipng.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAE522F4316A00FAD58A /* libminipng.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A56E99122FD613100E53422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AFCFAD922F4316A00FAD58A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AFCFAE122F4316A00FAD58A;
+			remoteInfo = libminipng;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		7A4CC58C22F977A20016ABE1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7A56E98B22FD613100E53422 /* libminipngTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libminipngTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A56E98D22FD613100E53422 /* libminipngTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libminipngTests.swift; sourceTree = "<group>"; };
+		7A56E98F22FD613100E53422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFCFAE222F4316A00FAD58A /* libminipng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libminipng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFCFAE522F4316A00FAD58A /* libminipng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libminipng.h; sourceTree = "<group>"; };
 		7AFCFAE622F4316A00FAD58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +72,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A56E98822FD613100E53422 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A56E99022FD613100E53422 /* libminipng.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AFCFADF22F4316A00FAD58A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,11 +99,21 @@
 			path = lodepng;
 			sourceTree = "<group>";
 		};
+		7A56E98C22FD613100E53422 /* libminipngTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A56E98D22FD613100E53422 /* libminipngTests.swift */,
+				7A56E98F22FD613100E53422 /* Info.plist */,
+			);
+			path = libminipngTests;
+			sourceTree = "<group>";
+		};
 		7AFCFAD822F4316A00FAD58A = {
 			isa = PBXGroup;
 			children = (
 				7A4CC58C22F977A20016ABE1 /* README.md */,
 				7AFCFAE422F4316A00FAD58A /* libminipng */,
+				7A56E98C22FD613100E53422 /* libminipngTests */,
 				7AFCFAE322F4316A00FAD58A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7AFCFAE222F4316A00FAD58A /* libminipng.framework */,
+				7A56E98B22FD613100E53422 /* libminipngTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +185,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7A56E98A22FD613100E53422 /* libminipngTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A56E99522FD613100E53422 /* Build configuration list for PBXNativeTarget "libminipngTests" */;
+			buildPhases = (
+				7A56E98722FD613100E53422 /* Sources */,
+				7A56E98822FD613100E53422 /* Frameworks */,
+				7A56E98922FD613100E53422 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A56E99222FD613100E53422 /* PBXTargetDependency */,
+			);
+			name = libminipngTests;
+			productName = libminipngTests;
+			productReference = 7A56E98B22FD613100E53422 /* libminipngTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7AFCFAE122F4316A00FAD58A /* libminipng */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AFCFAF622F4316B00FAD58A /* Build configuration list for PBXNativeTarget "libminipng" */;
@@ -180,6 +232,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "iChochy http://www.chochy.cn/";
 				TargetAttributes = {
+					7A56E98A22FD613100E53422 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					7AFCFAE122F4316A00FAD58A = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -199,11 +254,19 @@
 			projectRoot = "";
 			targets = (
 				7AFCFAE122F4316A00FAD58A /* libminipng */,
+				7A56E98A22FD613100E53422 /* libminipngTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7A56E98922FD613100E53422 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AFCFAE022F4316A00FAD58A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +278,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A56E98722FD613100E53422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A56E98E22FD613100E53422 /* libminipngTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AFCFADE22F4316A00FAD58A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,7 +305,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7A56E99222FD613100E53422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AFCFAE122F4316A00FAD58A /* libminipng */;
+			targetProxy = 7A56E99122FD613100E53422 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7A56E99322FD613100E53422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 64RWPFUJYS;
+				INFOPLIST_FILE = libminipngTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ichochy.libminipngTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7A56E99422FD613100E53422 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 64RWPFUJYS;
+				INFOPLIST_FILE = libminipngTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ichochy.libminipngTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		7AFCFAF422F4316B00FAD58A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -378,7 +495,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.ichochy.minipng;
+				PRODUCT_BUNDLE_IDENTIFIER = minipng.ichochy.com;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -407,7 +524,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.ichochy.minipng;
+				PRODUCT_BUNDLE_IDENTIFIER = minipng.ichochy.com;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -418,6 +535,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A56E99522FD613100E53422 /* Build configuration list for PBXNativeTarget "libminipngTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A56E99322FD613100E53422 /* Debug */,
+				7A56E99422FD613100E53422 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7AFCFADC22F4316A00FAD58A /* Build configuration list for PBXProject "libminipng" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
