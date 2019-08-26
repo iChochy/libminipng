@@ -10,6 +10,7 @@
 		7A4CC58D22F977A20016ABE1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A4CC58C22F977A20016ABE1 /* README.md */; };
 		7A56E98E22FD613100E53422 /* libminipngTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56E98D22FD613100E53422 /* libminipngTests.swift */; };
 		7A56E99022FD613100E53422 /* libminipng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFCFAE222F4316A00FAD58A /* libminipng.framework */; };
+		7AA84ECC231389CF00008862 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7AA84ECB231389CF00008862 /* LICENSE */; };
 		7AFCFB0F22F4319200FAD58A /* kmeans.c in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCFAFD22F4319100FAD58A /* kmeans.c */; };
 		7AFCFB1022F4319200FAD58A /* mempool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAFE22F4319100FAD58A /* mempool.h */; };
 		7AFCFB1122F4319200FAD58A /* kmeans.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFCFAFF22F4319100FAD58A /* kmeans.h */; };
@@ -47,6 +48,7 @@
 		7A56E98B22FD613100E53422 /* libminipngTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libminipngTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A56E98D22FD613100E53422 /* libminipngTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libminipngTests.swift; sourceTree = "<group>"; };
 		7A56E98F22FD613100E53422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA84ECB231389CF00008862 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7AFCFAE222F4316A00FAD58A /* libminipng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libminipng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFCFAE522F4316A00FAD58A /* libminipng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libminipng.h; sourceTree = "<group>"; };
 		7AFCFAE622F4316A00FAD58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,9 +113,10 @@
 		7AFCFAD822F4316A00FAD58A = {
 			isa = PBXGroup;
 			children = (
-				7A4CC58C22F977A20016ABE1 /* README.md */,
 				7AFCFAE422F4316A00FAD58A /* libminipng */,
 				7A56E98C22FD613100E53422 /* libminipngTests */,
+				7AA84ECB231389CF00008862 /* LICENSE */,
+				7A4CC58C22F977A20016ABE1 /* README.md */,
 				7AFCFAE322F4316A00FAD58A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA84ECC231389CF00008862 /* LICENSE in Resources */,
 				7A4CC58D22F977A20016ABE1 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,12 +482,13 @@
 		7AFCFAF722F4316B00FAD58A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 64RWPFUJYS;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -497,6 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = minipng.ichochy.com;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -507,12 +513,13 @@
 		7AFCFAF822F4316B00FAD58A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 64RWPFUJYS;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -526,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = minipng.ichochy.com;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
