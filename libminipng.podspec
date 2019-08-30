@@ -99,6 +99,6 @@ Pod::Spec.new do |spec|
   spec.public_header_files = "libminipng/libminipng.h","libminipng/minipng.h"
   spec.resource = "README.md","LICENSE"
 
-  spec.swift_version = "4.0","4.2"
+  spec.swift_version = ["4.0","4.2"]
 
 end

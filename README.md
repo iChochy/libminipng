@@ -53,9 +53,15 @@ let result:Data? = minipng.path2Data(path, maximum)
 try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
 ```
 
-  
-
+---  
 ### GitHub:  
 libminipng: https://github.com/iChochy/libminipng  
 pngquant: https://github.com/ImageOptim/libimagequant  
 lodepng: https://github.com/lvandeve/lodepng
+
+---
+### 联系方系：  
+> 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
+> 网站：[http://www.ichochy.com](http://www.ichochy.com)  
+> GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   
+
