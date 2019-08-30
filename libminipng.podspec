@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "libminipng"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.4"
   spec.summary      = "Swift library that compresses PNG"
 
   # This description is used to generate tags and improve search results.
@@ -55,8 +55,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "MLeo" => "ichochy@qq.com" }
   # Or just: spec.author    = "MLeo"
-  # spec.authors            = { "MLeo" => "lb52406@qq.com" }
-  # spec.social_media_url   = "https://twitter.com/MLeo"
+  spec.social_media_url   = "https://twitter.com/iChochy"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -95,12 +94,11 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "libminipng/**/*"
-  spec.public_header_files = "libminipng/libminipng.h","libminipng/minipng.h"
   spec.exclude_files = "libminipng/libminipng-Info.plist"
+
+  spec.public_header_files = "libminipng/libminipng.h","libminipng/minipng.h"
   spec.resource = "README.md","LICENSE"
 
-  spec.swift_version = "4.2"
-
-
+  spec.swift_version = "4.0","4.2"
 
 end

@@ -25,13 +25,18 @@ public static func path2Data(_ path:String,_ maximum:Int) -> Data?
 ```
 
 
-### 快速使用
+### Cocoapods
 
-1、编译生成`libminipng.framework`
+**Podfile 添加 `pod "libminipng"`**
 
-2、项目引入`libminipng.framework`
+**运行命令  `pod install`**
 
-3、编写代码：
+
+### 使用
+
+ **引入 `import libminipng`**
+
+**编写代码：**
 
 ```swift
 let path:String = "http://images.chochy.cn/Cloud.png"
@@ -47,7 +52,7 @@ let maximum:Int = 100 // 压缩率，0-100,100为最好
 let result:Data? = minipng.path2Data(path, maximum)
 try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
 ```
-  
+
   
 
 ### GitHub:  

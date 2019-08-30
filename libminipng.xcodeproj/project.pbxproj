@@ -50,7 +50,6 @@
 		7A56E98D22FD613100E53422 /* libminipngTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libminipngTests.swift; sourceTree = "<group>"; };
 		7A56E98F22FD613100E53422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A8D0C532317BE1A001D187B /* libminipng.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libminipng.podspec; sourceTree = "<group>"; };
-		7A8D0C552317C24B001D187B /* libminipng.modulemap.bak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libminipng.modulemap.bak; sourceTree = "<group>"; };
 		7AA84ECB231389CF00008862 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7AFCFAE222F4316A00FAD58A /* libminipng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libminipng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFCFAE522F4316A00FAD58A /* libminipng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libminipng.h; sourceTree = "<group>"; };
@@ -121,7 +120,6 @@
 				7AA84ECB231389CF00008862 /* LICENSE */,
 				7A4CC58C22F977A20016ABE1 /* README.md */,
 				7A8D0C532317BE1A001D187B /* libminipng.podspec */,
-				7A8D0C552317C24B001D187B /* libminipng.modulemap.bak */,
 				7AFCFAE322F4316A00FAD58A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -238,7 +236,7 @@
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "iChochy http://www.chochy.cn/";
+				ORGANIZATIONNAME = "iChochy http://www.ichochy.com/";
 				TargetAttributes = {
 					7A56E98A22FD613100E53422 = {
 						CreatedOnToolsVersion = 10.1;

@@ -3,7 +3,7 @@
 //  libminipngTests
 //
 //  Created by MLeo on 2019/8/9.
-//  Copyright © 2019 iChochy http://www.chochy.cn/. All rights reserved.
+//  Copyright © 2019 iChochy https://www.ichochy.com/. All rights reserved.
 //
 
 import XCTest

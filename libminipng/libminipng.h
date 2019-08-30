@@ -3,7 +3,7 @@
 //  libminipng
 //
 //  Created by MLeo on 2019/8/5.
-//  Copyright © 2019年 iChochy http://www.chochy.cn/. All rights reserved.
+//  Copyright © 2019年 iChochy https://www.ichochy.com/. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
