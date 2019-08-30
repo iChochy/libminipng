@@ -1,0 +1,6 @@
+framework module libminipng {
+  umbrella header "libminipng.h"
+
+  export *
+  module * { export * }
+}
