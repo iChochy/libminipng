@@ -53,7 +53,7 @@
 		7AA84ECB231389CF00008862 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7AFCFAE222F4316A00FAD58A /* libminipng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libminipng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFCFAE522F4316A00FAD58A /* libminipng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libminipng.h; sourceTree = "<group>"; };
-		7AFCFAE622F4316A00FAD58A /* libminipng-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libminipng-Info.plist"; sourceTree = "<group>"; };
+		7AFCFAE622F4316A00FAD58A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFCFAFD22F4319100FAD58A /* kmeans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kmeans.c; sourceTree = "<group>"; };
 		7AFCFAFE22F4319100FAD58A /* mempool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mempool.h; sourceTree = "<group>"; };
 		7AFCFAFF22F4319100FAD58A /* kmeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kmeans.h; sourceTree = "<group>"; };
@@ -112,6 +112,19 @@
 			path = libminipngTests;
 			sourceTree = "<group>";
 		};
+		7A8D0C582318FAB5001D187B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7AFCFAE522F4316A00FAD58A /* libminipng.h */,
+				7AFCFB2422F4336E00FAD58A /* minipng.swift */,
+				7AFCFB0A22F4319200FAD58A /* minipng.c */,
+				7AFCFB0422F4319200FAD58A /* minipng.h */,
+				7A4CC58322F7D90B0016ABE1 /* lodepng */,
+				7AFCFAFC22F4317100FAD58A /* pngquant */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7AFCFAD822F4316A00FAD58A = {
 			isa = PBXGroup;
 			children = (
@@ -136,13 +149,8 @@
 		7AFCFAE422F4316A00FAD58A /* libminipng */ = {
 			isa = PBXGroup;
 			children = (
-				7AFCFAE522F4316A00FAD58A /* libminipng.h */,
-				7AFCFB2422F4336E00FAD58A /* minipng.swift */,
-				7AFCFB0A22F4319200FAD58A /* minipng.c */,
-				7AFCFB0422F4319200FAD58A /* minipng.h */,
-				7A4CC58322F7D90B0016ABE1 /* lodepng */,
-				7AFCFAFC22F4317100FAD58A /* pngquant */,
-				7AFCFAE622F4316A00FAD58A /* libminipng-Info.plist */,
+				7A8D0C582318FAB5001D187B /* Classes */,
+				7AFCFAE622F4316A00FAD58A /* Info.plist */,
 			);
 			path = libminipng;
 			sourceTree = "<group>";
@@ -497,7 +505,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "libminipng/libminipng-Info.plist";
+				INFOPLIST_FILE = libminipng/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +538,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "libminipng/libminipng-Info.plist";
+				INFOPLIST_FILE = libminipng/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

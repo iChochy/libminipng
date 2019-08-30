@@ -93,10 +93,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "libminipng/**/*"
-  spec.exclude_files = "libminipng/libminipng-Info.plist"
+  spec.source_files  = "libminipng/Classes/**/*"
 
-  spec.public_header_files = "libminipng/libminipng.h","libminipng/minipng.h"
+  spec.public_header_files = "libminipng/Classes/libminipng.h","libminipng/Classes/minipng.h"
   spec.resource = "README.md","LICENSE"
 
   spec.swift_version = ["4.0","4.2"]
