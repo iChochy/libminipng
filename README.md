@@ -39,7 +39,7 @@ public static func path2Data(_ path:String,_ maximum:Int) -> Data?
 **编写代码：**
 
 ```swift
-let path:String = "http://images.chochy.cn/Cloud.png"
+let path:String = "http://images.ichochy.com/Cloud.png"
 let data:Data = try! Data.init(contentsOf: URL.init(string: path)!)
 let maximum:Int = 100 // 压缩率，0-100,100为最好
 let result:Data? = minipng.data2Data(data,maximum)

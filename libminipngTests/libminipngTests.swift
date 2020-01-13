@@ -2,8 +2,8 @@
 //  libminipngTests.swift
 //  libminipngTests
 //
-//  Created by MLeo on 2019/8/9.
-//  Copyright © 2019 iChochy https://www.ichochy.com/. All rights reserved.
+//  Created by MLeo on 2020/1/13.
+//  Copyright © 2020 iChochy http://www.ichochy.com/. All rights reserved.
 //
 
 import XCTest
@@ -20,17 +20,17 @@ class libminipngTests: XCTestCase {
     }
 
     func testExample() {
-        let path:String = "http://images.chochy.cn/Cloud.png"
-        let data:Data = try! Data.init(contentsOf: URL.init(string: path)!)
-        let maximum:Int = 100 // 压缩率，0-100,100为最好
-        let result:Data? = minipng.data2Data(data,maximum)
-        try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
+//        let path:String = "http://images.ichochy.com/test.png"
+//        let data:Data = try! Data.init(contentsOf: URL.init(string: path)!)
+//        let maximum:Int = 100 // 压缩率，0-100,100为最好
+//        let result:Data? = minipng.data2Data(data,maximum)
+//        try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
 
         
-//        let path:String = "/Users/mleo/Cloud.png"
-//        let maximum:Int = 100 // 压缩率，0-100,100为最好
-//        let result:Data? = minipng.path2Data(path, maximum)
-//        try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
+        let path:String = "/Users/mleo/Desktop/image.png"
+        let maximum:Int = 100 // 压缩率，0-100,100为最好
+        let result:Data? = minipng.path2Data(path, maximum)
+        try! result?.write(to: URL.init(fileURLWithPath: "/Users/mleo/minipng.png"))
         
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -38,7 +38,7 @@ class libminipngTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }

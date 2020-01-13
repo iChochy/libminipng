@@ -6,9 +6,9 @@
 //  Copyright © 2019年 iChochy https://www.ichochy.com/. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+//#import <Cocoa/Cocoa.h>
+@import Foundation;
 #import "minipng.h"
-
 
 //! Project version number for pngmini.
 FOUNDATION_EXPORT double pngminiVersionNumber;

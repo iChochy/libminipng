@@ -6,8 +6,7 @@
 //  Copyright © 2019年 iChochy https://www.ichochy.com/. All rights reserved.
 //
 
-import Cocoa
-
+//import Cocoa
 public class minipng{
     
     

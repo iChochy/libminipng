@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "libminipng"
-  spec.version      = "0.0.4"
+  spec.version      = "0.5.5"
   spec.summary      = "Swift library that compresses PNG"
 
   # This description is used to generate tags and improve search results.
@@ -65,8 +65,10 @@ Pod::Spec.new do |spec|
 
     spec.platform = :osx
     spec.osx.deployment_target = "10.10"
-
-  # spec.platform     = :ios
+    
+    spec.platform = :ios
+    spec.ios.deployment_target = "10.0"
+    
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -94,10 +96,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "libminipng/Classes/**/*"
-
   spec.public_header_files = "libminipng/Classes/libminipng.h","libminipng/Classes/minipng.h"
   spec.resource = "README.md","LICENSE"
 
-  spec.swift_version = ["4.0","4.2"]
+  spec.swift_version = ["4.0","4.2","5.0","5.1"]
 
 end
