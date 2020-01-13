@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
         Parse the png image with lodepng and compress the Swift library with the pngquant algorithm 
                   DESC
 
-  spec.homepage     = "http://www.ichochy.com/libminipng"
+  spec.homepage     = "https://libminipng.ichochy.com"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

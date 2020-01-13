@@ -62,6 +62,6 @@ lodepng: https://github.com/lvandeve/lodepng
 ---
 ### 联系方系：  
 > 邮箱：[iChochy@qq.com](mailto:iChochy@qq.com)   
-> 网站：[http://www.ichochy.com](http://www.ichochy.com)  
+> 网站：[https://libminipng.ichochy.com](https://libminipng.ichochy.com)  
 > GitHub： [https://github.com/iChochy]( https://github.com/iChochy)   
 
