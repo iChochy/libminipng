@@ -14,13 +14,16 @@ public class minipng{
     ///
     /// - Parameters:
     ///   - data: PNG图片Data
-    ///   - maximum: 压缩率，0-100,100为最好
+    ///   - quality: 压缩率，0-1, 1为最好
     /// - Returns: 压缩后的PNG图片Data
-    public static func data2Data(_ data:Data,_ maximum:Int) -> Data?{
+    public static func data2Data(_ data: Data, _ quality: Float) -> Data?{
         var mini:UnsafeMutablePointer<UInt8>? = UnsafeMutablePointer.allocate(capacity: 0)
         let pngData:UnsafeMutablePointer<UInt8> = UnsafeMutablePointer.allocate(capacity: data.count)
         data.copyBytes(to: pngData, count: data.count)
-        let count:Int = Int(_data2Data(&mini,Int32(maximum),pngData,data.count))
+        
+        let quality = Swift.max(1, Int32(quality * 100))
+
+        let count:Int = Int(_data2Data(&mini, Int32(quality), pngData, data.count))
         if count == 0 {
             return nil;
         }
