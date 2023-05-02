@@ -78,6 +78,7 @@ unsigned long _data2Data(unsigned char **data,int maximum,unsigned char* png_dat
     liq_attr_destroy(handle);
     free(png_data);
     free(raw_8bit_pixels);
+    free(raw_rgba_pixels);
     lodepng_state_cleanup(&state);
     return output_file_size;
 }
